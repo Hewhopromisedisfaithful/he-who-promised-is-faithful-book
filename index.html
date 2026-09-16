@@ -292,6 +292,32 @@
                 padding: 14% 9%;
             }
         }
+        @page {
+    size: 6in 9in;
+    margin: 0;
+}
+        @media print {
+    .book-cover,
+    .title-page,
+    .copyright-page,
+    .scripture-page {
+        break-after: page;
+        page-break-after: always;
+    }
+}
+        @media print {
+    .book-cover,
+    .title-page,
+    .copyright-page,
+    .scripture-page {
+        width: 6in;
+        height: 9in;
+        min-height: 9in;
+        max-height: 9in;
+        margin: 0;
+        padding: 0.7in;
+    }
+}
     </style>
 </head>
 
