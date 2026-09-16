@@ -115,7 +115,49 @@
             font-size: 18px;
             letter-spacing: 7px;
         }
+.title-page {
+    min-height: 100vh;
+    background: #f8f5ec;
+    color: #26352c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12% 10%;
+    font-family: Georgia, "Times New Roman", serif;
+}
 
+.title-page h1 {
+    max-width: 700px;
+    margin: 0;
+    font-size: clamp(30px, 6vw, 52px);
+    line-height: 1.15;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.title-page .subtitle {
+    max-width: 600px;
+    margin: 35px 0 70px;
+    font-size: clamp(15px, 2.5vw, 20px);
+    line-height: 1.6;
+    font-style: italic;
+    color: #5b665e;
+}
+
+.author-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #8f7132;
+}
+
+.author-name {
+    font-size: clamp(20px, 3vw, 28px);
+    letter-spacing: 1px;
+}
         @media (max-width: 500px) {
             body {
                 padding: 15px;
@@ -168,6 +210,21 @@
         </div>
 
     </main>
+<section class="title-page">
+    <h1>HE WHO PROMISED IS FAITHFUL</h1>
 
+    <p class="subtitle">
+        The Journey of Waiting, Trusting,
+        and Seeing God Fulfill His Promise
+    </p>
+
+    <div class="author-label">
+        Written by
+    </div>
+
+    <div class="author-name">
+        Arnel Oliveros
+    </div>
+</section>
 </body>
 </html>
