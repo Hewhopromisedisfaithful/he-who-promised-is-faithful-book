@@ -358,8 +358,8 @@
     .copyright-page,
     .scripture-page,
     .introduction-page {
-        break-after: page;
-        page-break-after: always;
+    break-after: auto;
+    page-break-after: auto;
     }
 }
         @media print {
@@ -377,6 +377,7 @@
     box-sizing: border-box;
 }
 }
+       
         @media print {
     .book-cover {
         box-shadow: none;
